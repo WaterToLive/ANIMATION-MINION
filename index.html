@@ -10,6 +10,7 @@
 <script>
     let spritesheet; 
     let spritedata;
+    let animation = [];
    
     function preload() {
         spritedata = loadJSON('horse.json');
@@ -18,7 +19,7 @@
     
     
     function setup() {
-        console.log("LAST UPDATE: 1224");
+        console.log("LAST UPDATE: 1226");
         createCanvas(640,480);
         let frames = spritedata.frames;
         for (let i = 0; i < frames.length; i++) {
